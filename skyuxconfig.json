@@ -69,7 +69,8 @@
     ]
   },
   "plugins": [
-    "@blackbaud/skyux-builder-plugin-stache"
+    "@blackbaud/skyux-builder-plugin-stache",
+    "@blackbaud/skyux-builder-plugin-code-block"
   ],
   "redirects": {
     "learn/get-started/1.-SSL-certification": "learn/get-started/prereqs/ssl-certificate",

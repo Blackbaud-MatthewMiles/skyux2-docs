@@ -3,10 +3,6 @@ import {
 } from '@angular/core';
 
 import {
-  StacheModule
-} from'@blackbaud/stache';
-
-import {
   SkyDemoComponentsModule
 } from './components/demo-components.module';
 
@@ -24,13 +20,8 @@ require('style-loader!./styles.scss');
   entryComponents: [
     SkyInlineFormDemoTileComponent
   ],
-  imports: [
-    SkyDemoComponentsModule,
-    StacheModule
-  ],
   exports: [
-    SkyDemoComponentsModule,
-    StacheModule
+    SkyDemoComponentsModule
   ],
   providers: [
     SkyDemoTitleService
