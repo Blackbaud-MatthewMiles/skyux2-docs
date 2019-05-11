@@ -184,6 +184,29 @@ export class SkyDemoComponentsService {
         disableStackblitz: true
       },
       {
+        name: 'Date pipe',
+        icon: 'calendar',
+        summary: 'The date pipe pipe converts dates into the preferred format and locale.',
+        url: '/components/SkyDatePipe',
+        imports: {
+          '@skyux/core': [
+            'SkyNumericModule'
+          ],
+          '@skyux/layout': [
+            'SkyDefinitionListModule'
+          ]
+        },
+        getCodeFiles: () => this.getDemoFiles('SkyNumericDemoComponent'),
+        disableStackblitz: true
+      },
+      {
+        name: 'Date range picker',
+        icon: 'calendar',
+        summary: `The date range picker component creates a text input for users to select a date range from a set of well-known options.`,
+        url: '/components/date-range-picker',
+        getCodeFiles: () => this.getDemoFiles('SkyDateRangePickerDemoComponent')
+      },
+      {
         name: 'Datepicker',
         icon: 'calendar',
         summary: `The datepicker module allows users to use an input and calendar to select dates.`,
@@ -194,13 +217,6 @@ export class SkyDemoComponentsService {
           ]
         },
         getCodeFiles: () => this.getDemoFiles('SkyDatepickerDemoComponent')
-      },
-      {
-        name: 'Date range picker',
-        icon: 'calendar',
-        summary: `The date range picker component creates a text input for users to select a date range from a set of well-known options.`,
-        url: '/components/date-range-picker',
-        getCodeFiles: () => this.getDemoFiles('SkyDateRangePickerDemoComponent')
       },
       {
         name: 'Definition list',
